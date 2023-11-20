@@ -210,7 +210,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
       <label>🤑who is paying the bill?</label>
       <select
         value={whoIsPaying}
-        onChange={(e) => setWhoIsPaying(e.target.value)}
+        onChange={(e) => setWhoIsPaying(Number(e.target.value))}
       >
         <option value="user">You</option>
         <option value="friend">{selectedFriend.name}</option>
